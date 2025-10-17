@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  /* Oswald Regular */
+  @font-face {
+    font-family: 'Oswald';
+    font-weight: 400;
+    src: url('../../public/fonts/oswald/oswald-regular.woff') format('woff');
+    font-display: swap;
+  }
+
+  /* Oswald Medium */
+  @font-face {
+    font-family: 'Oswald';
+    font-weight: 500;
+    src: url('../../public/fonts/oswald/oswald-medium.woff') format('woff');
+    font-display: swap;
+  }
+
+  /* Default font for body */
+  body {
+    font-family: 'Oswald', system-ui, sans-serif;
+  }
+}
+
