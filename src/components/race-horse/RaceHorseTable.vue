@@ -1,9 +1,11 @@
 <template>
-  <Table :title="title" :columns="columns" :data="tableRows">
-    <template #color="{ row }">
-      <RaceHorseSvg :color="row.color" :size="32" />
-    </template>
-  </Table>
+  <div class="h-full">
+    <Table :title="title" :columns="columns" :data="tableRows">
+      <template #color="{ row }">
+        <race-horse-svg :color="row.color" :size="32" />
+      </template>
+    </Table>
+  </div>
 </template>
 
 <script setup lang="ts">

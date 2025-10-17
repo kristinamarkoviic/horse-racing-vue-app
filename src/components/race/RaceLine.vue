@@ -13,7 +13,7 @@
           )}%`,
         }"
       >
-        <race-horse-svg :color="horse?.color" :size="56" />
+        <race-horse-svg :color="horse?.color" :size="64" />
       </div>
       <div class="horse-name">
         {{ horse?.name }}

@@ -1,4 +1,3 @@
-<!-- src/views/Home.vue -->
 <template>
   <div
     class="min-h-screen bg-gradient-to-br from-gray-900 via-defaultBgColor to-raceLineColorDark flex items-center justify-center"
@@ -83,7 +82,7 @@
       </div>
       <div class="flex flex-col gap-2 items-center">
         <div class="w-fit">
-          <PageButton label="Let's Begin!" @click="navigateToRace" />
+          <page-button label="Let's Begin!" @click="navigateToRace" />
         </div>
         <p class="text-gray-400">Click "Let's Begin!" to start racing!</p>
       </div>

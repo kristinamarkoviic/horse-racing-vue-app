@@ -4,11 +4,11 @@
       v-if="!hideTitle"
       class="table-header bg-gradient-to-r from-defaultBgColor to-raceLineColorDark p-4"
     >
-      <h2 class="text-white text-l font-bold">{{ title }}</h2>
-      <p v-if="subtitle" class="text-green-200 text-sm mt-1">{{ subtitle }}</p>
+      <h2 class="text-white text-left text-l font-bold">{{ title }}</h2>
+      <p v-if="subtitle" class="text-green-200 text-sm">{{ subtitle }}</p>
     </div>
 
-    <div class="overflow-x-auto">
+    <div>
       <table class="w-full">
         <thead class="bg-gray-50">
           <tr>

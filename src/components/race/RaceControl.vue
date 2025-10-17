@@ -1,8 +1,7 @@
 <template>
-  <div class="bg-white/10 rounded-xl p-6 border border-white/10">
-    <div class="flex flex-col md:flex-row items-center justify-between gap-4">
-      <div class="text-center md:text-left">
-        <h2 class="text-2xl font-bold text-white mb-2">Race Control</h2>
+  <div>
+    <div class="flex flex-col items-end justify-between gap-1">
+      <div class="text-center">
         <p class="text-gray-300">
           {{
             raceStatus === "idle"
@@ -16,22 +15,22 @@
         </p>
       </div>
       <div class="flex gap-3">
-        <PageButton
+        <page-button
           v-if="raceStatus === 'idle' || raceStatus === 'paused'"
           :label="raceStatus === 'idle' ? 'Start Race' : 'Resume'"
           @click="handleStartRace"
         />
-        <PageButton
+        <page-button
           v-if="raceStatus === 'running'"
           label="Pause"
           @click="pauseRace"
         />
-        <PageButton
+        <page-button
           v-if="raceStatus === 'running' || raceStatus === 'paused'"
           label="Stop"
           @click="resetRace"
         />
-        <PageButton
+        <page-button
           v-if="raceStatus === 'finished'"
           label="New Race"
           @click="resetRace"
